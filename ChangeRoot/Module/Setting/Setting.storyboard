@@ -52,10 +52,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="rzP-AA-cfe"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="t4P-h5-cve" kind="show" id="HlP-ee-4Ib"/>
+                                    <action selector="didTapButton:" destination="bj7-xH-xZi" eventType="touchUpInside" id="TJv-Cq-GqX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -75,22 +76,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7AA-d1-oTg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="791" y="-24"/>
-        </scene>
-        <!--Test-->
-        <scene sceneID="dBC-Gk-Ltq">
-            <objects>
-                <viewController id="t4P-h5-cve" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ycp-df-uma">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="pd2-Xe-gst"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Test" id="iXJ-WD-H8Y"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6aB-Yx-tgk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1741" y="-24"/>
         </scene>
     </scenes>
     <resources>

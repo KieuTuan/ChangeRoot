@@ -30,6 +30,10 @@
 		7261A7A728CF2D96006A7069 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261A7A628CF2D96006A7069 /* LoginViewController.swift */; };
 		7261A7AA28CF3920006A7069 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261A7A928CF3920006A7069 /* UIApplication+.swift */; };
 		7261A7AC28CF3ADF006A7069 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261A7AB28CF3ADF006A7069 /* Utils.swift */; };
+		7261A7B128D036F6006A7069 /* Logout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7261A7B028D036F6006A7069 /* Logout.storyboard */; };
+		7261A7B328D0377B006A7069 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261A7B228D0377B006A7069 /* LogoutViewController.swift */; };
+		7261A7B628D039AE006A7069 /* SettingGoToLogout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7261A7B528D039AE006A7069 /* SettingGoToLogout.storyboard */; };
+		7261A7B828D039C7006A7069 /* SettingGoToLogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261A7B728D039C7006A7069 /* SettingGoToLogoutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +82,10 @@
 		7261A7A628CF2D96006A7069 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7261A7A928CF3920006A7069 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		7261A7AB28CF3ADF006A7069 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		7261A7B028D036F6006A7069 /* Logout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Logout.storyboard; sourceTree = "<group>"; };
+		7261A7B228D0377B006A7069 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		7261A7B528D039AE006A7069 /* SettingGoToLogout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingGoToLogout.storyboard; sourceTree = "<group>"; };
+		7261A7B728D039C7006A7069 /* SettingGoToLogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGoToLogoutViewController.swift; sourceTree = "<group>"; };
 		F278C28C935A6688A4EE89E4 /* Pods_ChangeRoot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChangeRoot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -173,10 +181,12 @@
 			isa = PBXGroup;
 			children = (
 				7261A7A328CF2D04006A7069 /* Login */,
+				7261A7AE28D036CE006A7069 /* Logout */,
 				7261A79228C9D187006A7069 /* TabBar */,
 				7261A78D28C9A3E2006A7069 /* Home */,
 				7261A79E28CEF115006A7069 /* History */,
 				7261A79928CEE6B2006A7069 /* Setting */,
+				7261A7B428D03954006A7069 /* SettingGoToLogout */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -268,6 +278,24 @@
 				7261A7A928CF3920006A7069 /* UIApplication+.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		7261A7AE28D036CE006A7069 /* Logout */ = {
+			isa = PBXGroup;
+			children = (
+				7261A7B028D036F6006A7069 /* Logout.storyboard */,
+				7261A7B228D0377B006A7069 /* LogoutViewController.swift */,
+			);
+			path = Logout;
+			sourceTree = "<group>";
+		};
+		7261A7B428D03954006A7069 /* SettingGoToLogout */ = {
+			isa = PBXGroup;
+			children = (
+				7261A7B528D039AE006A7069 /* SettingGoToLogout.storyboard */,
+				7261A7B728D039C7006A7069 /* SettingGoToLogoutViewController.swift */,
+			);
+			path = SettingGoToLogout;
 			sourceTree = "<group>";
 		};
 		F28C4F79DFFF2FB9107A845D /* Frameworks */ = {
@@ -387,10 +415,12 @@
 			files = (
 				7261A79428C9D1E0006A7069 /* TabBar.storyboard in Resources */,
 				72167B8128C84F6900116F4F /* LaunchScreen.storyboard in Resources */,
+				7261A7B128D036F6006A7069 /* Logout.storyboard in Resources */,
 				7261A7A528CF2D58006A7069 /* Login.storyboard in Resources */,
 				7261A79C28CEEA90006A7069 /* Setting.storyboard in Resources */,
 				72167B7E28C84F6900116F4F /* Assets.xcassets in Resources */,
 				7261A78F28C9A404006A7069 /* Home.storyboard in Resources */,
+				7261A7B628D039AE006A7069 /* SettingGoToLogout.storyboard in Resources */,
 				7261A7A128CEF194006A7069 /* History.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,11 +512,13 @@
 				72167B7528C84F6800116F4F /* AppDelegate.swift in Sources */,
 				72167BA928C8555300116F4F /* BaseViewController.swift in Sources */,
 				7261A79D28CEEA93006A7069 /* SettingViewController.swift in Sources */,
+				7261A7B828D039C7006A7069 /* SettingGoToLogoutViewController.swift in Sources */,
 				7261A79628C9D38A006A7069 /* TabBarViewController.swift in Sources */,
 				723EDDCB28C8895D002E09F3 /* BaseNavigationViewController.swift in Sources */,
 				7261A7A228CEF197006A7069 /* HistoryViewController.swift in Sources */,
 				7261A79828C9D52F006A7069 /* HomeViewController.swift in Sources */,
 				7261A7AA28CF3920006A7069 /* UIApplication+.swift in Sources */,
+				7261A7B328D0377B006A7069 /* LogoutViewController.swift in Sources */,
 				7261A7A728CF2D96006A7069 /* LoginViewController.swift in Sources */,
 				72167BBD28C87AAA00116F4F /* R.generated.swift in Sources */,
 				7261A7AC28CF3ADF006A7069 /* Utils.swift in Sources */,

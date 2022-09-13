@@ -89,7 +89,7 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 6 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 8 storyboards.
   struct storyboard {
     /// Storyboard `History`.
     static let history = _R.storyboard.history()
@@ -99,6 +99,10 @@ struct R: Rswift.Validatable {
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Login`.
     static let login = _R.storyboard.login()
+    /// Storyboard `Logout`.
+    static let logout = _R.storyboard.logout()
+    /// Storyboard `SettingGoToLogout`.
+    static let settingGoToLogout = _R.storyboard.settingGoToLogout()
     /// Storyboard `Setting`.
     static let setting = _R.storyboard.setting()
     /// Storyboard `TabBar`.
@@ -133,9 +137,23 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "Logout", bundle: ...)`
+    static func logout(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.logout)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "Setting", bundle: ...)`
     static func setting(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.setting)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "SettingGoToLogout", bundle: ...)`
+    static func settingGoToLogout(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.settingGoToLogout)
     }
     #endif
 
@@ -242,7 +260,13 @@ struct _R: Rswift.Validatable {
       try login.validate()
       #endif
       #if os(iOS) || os(tvOS)
+      try logout.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
       try setting.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
+      try settingGoToLogout.validate()
       #endif
       #if os(iOS) || os(tvOS)
       try tabBar.validate()
@@ -317,6 +341,22 @@ struct _R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    struct logout: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = LogoutViewController
+
+      let bundle = R.hostingBundle
+      let name = "Logout"
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     struct setting: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
       typealias InitialController = BaseNavigationViewController
 
@@ -325,6 +365,22 @@ struct _R: Rswift.Validatable {
 
       static func validate() throws {
         if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "gearshape.fill") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'gearshape.fill' is used in storyboard 'Setting', but couldn't be loaded.") } }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct settingGoToLogout: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = SettingGoToLogoutViewController
+
+      let bundle = R.hostingBundle
+      let name = "SettingGoToLogout"
+
+      static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
       }
