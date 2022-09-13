@@ -89,7 +89,7 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 5 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 6 storyboards.
   struct storyboard {
     /// Storyboard `History`.
     static let history = _R.storyboard.history()
@@ -97,6 +97,8 @@ struct R: Rswift.Validatable {
     static let home = _R.storyboard.home()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
+    /// Storyboard `Login`.
+    static let login = _R.storyboard.login()
     /// Storyboard `Setting`.
     static let setting = _R.storyboard.setting()
     /// Storyboard `TabBar`.
@@ -120,6 +122,13 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
     static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.launchScreen)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "Login", bundle: ...)`
+    static func login(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.login)
     }
     #endif
 
@@ -180,7 +189,7 @@ struct R: Rswift.Validatable {
             static let _key = "Default Configuration"
             static let uiSceneConfigurationName = infoPlistString(path: ["UIApplicationSceneManifest", "UISceneConfigurations", "UIWindowSceneSessionRoleApplication", "Default Configuration"], key: "UISceneConfigurationName") ?? "Default Configuration"
             static let uiSceneDelegateClassName = infoPlistString(path: ["UIApplicationSceneManifest", "UISceneConfigurations", "UIWindowSceneSessionRoleApplication", "Default Configuration"], key: "UISceneDelegateClassName") ?? "$(PRODUCT_MODULE_NAME).SceneDelegate"
-            static let uiSceneStoryboardFile = infoPlistString(path: ["UIApplicationSceneManifest", "UISceneConfigurations", "UIWindowSceneSessionRoleApplication", "Default Configuration"], key: "UISceneStoryboardFile") ?? "TabBar"
+            static let uiSceneStoryboardFile = infoPlistString(path: ["UIApplicationSceneManifest", "UISceneConfigurations", "UIWindowSceneSessionRoleApplication", "Default Configuration"], key: "UISceneStoryboardFile") ?? "Login"
 
             fileprivate init() {}
           }
@@ -228,6 +237,9 @@ struct _R: Rswift.Validatable {
       #endif
       #if os(iOS) || os(tvOS)
       try launchScreen.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
+      try login.validate()
       #endif
       #if os(iOS) || os(tvOS)
       try setting.validate()
@@ -280,6 +292,22 @@ struct _R: Rswift.Validatable {
 
       static func validate() throws {
         if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "scribble.variable") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'scribble.variable' is used in storyboard 'LaunchScreen', but couldn't be loaded.") } }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct login: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = LoginViewController
+
+      let bundle = R.hostingBundle
+      let name = "Login"
+
+      static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
       }
