@@ -7,12 +7,11 @@
 
 import UIKit
 
-enum tabBarItem {
-    case Home
+enum TabBarItem {
+    case home
 }
 
 final class TabBarViewController: UITabBarController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setTabBarItem()

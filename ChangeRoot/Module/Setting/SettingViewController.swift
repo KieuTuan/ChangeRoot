@@ -14,9 +14,8 @@ final class SettingViewController: BaseViewController {
         title = "Setting"
     }
 
-    @IBAction func didTapButton(_ sender: Any) {
+    @IBAction private func didTapButton(_ sender: Any) {
         guard let settingGoToLogout = R.storyboard.settingGoToLogout.instantiateInitialViewController() else { return }
         navigationController?.pushViewController(settingGoToLogout, animated: true)
     }
-
 }
