@@ -8,12 +8,11 @@
 import UIKit
 
 final class SettingGoToLogoutViewController: BaseViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    @IBAction func didTapGoToLogout(_ sender: Any) {
+    @IBAction private func didTapGoToLogout(_ sender: Any) {
         guard let logoutViewController = R.storyboard.logout.instantiateInitialViewController() else { return }
         navigationController?.pushViewController(logoutViewController, animated: true)
     }

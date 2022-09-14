@@ -17,6 +17,9 @@
 		72167BA928C8555300116F4F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72167BA828C8555300116F4F /* BaseViewController.swift */; };
 		72167BBD28C87AAA00116F4F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72167BBC28C87AAA00116F4F /* R.generated.swift */; };
 		723EDDCB28C8895D002E09F3 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723EDDCA28C8895D002E09F3 /* BaseNavigationViewController.swift */; };
+		725F721428D0917E0001A387 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725F721328D0917E0001A387 /* UIButton+.swift */; };
+		725F721928D1CB7B0001A387 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725F721828D1CB7B0001A387 /* String+.swift */; };
+		725F721B28D1D0910001A387 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725F721A28D1D0910001A387 /* UILabel+.swift */; };
 		7261A78F28C9A404006A7069 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7261A78E28C9A404006A7069 /* Home.storyboard */; };
 		7261A79128C9B0B3006A7069 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261A79028C9B0B3006A7069 /* SceneDelegate.swift */; };
 		7261A79428C9D1E0006A7069 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7261A79328C9D1E0006A7069 /* TabBar.storyboard */; };
@@ -34,6 +37,7 @@
 		7261A7B328D0377B006A7069 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261A7B228D0377B006A7069 /* LogoutViewController.swift */; };
 		7261A7B628D039AE006A7069 /* SettingGoToLogout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7261A7B528D039AE006A7069 /* SettingGoToLogout.storyboard */; };
 		7261A7B828D039C7006A7069 /* SettingGoToLogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261A7B728D039C7006A7069 /* SettingGoToLogoutViewController.swift */; };
+		7261A7BE28D08D6E006A7069 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7261A7C028D08D6E006A7069 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,11 @@
 		72167BA828C8555300116F4F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		72167BBC28C87AAA00116F4F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		723EDDCA28C8895D002E09F3 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		725F721028D08DFF0001A387 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		725F721228D08E130001A387 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		725F721328D0917E0001A387 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		725F721828D1CB7B0001A387 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		725F721A28D1D0910001A387 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		7261A78E28C9A404006A7069 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		7261A79028C9B0B3006A7069 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7261A79328C9D1E0006A7069 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
@@ -86,6 +95,7 @@
 		7261A7B228D0377B006A7069 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		7261A7B528D039AE006A7069 /* SettingGoToLogout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingGoToLogout.storyboard; sourceTree = "<group>"; };
 		7261A7B728D039C7006A7069 /* SettingGoToLogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGoToLogoutViewController.swift; sourceTree = "<group>"; };
+		7261A7BF28D08D6E006A7069 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F278C28C935A6688A4EE89E4 /* Pods_ChangeRoot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChangeRoot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -195,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				72167B7D28C84F6900116F4F /* Assets.xcassets */,
+				7261A7BA28D089A9006A7069 /* Localizable */,
 				72167BAB28C859DE00116F4F /* Other */,
 			);
 			path = "Supporting Files";
@@ -276,6 +287,9 @@
 			isa = PBXGroup;
 			children = (
 				7261A7A928CF3920006A7069 /* UIApplication+.swift */,
+				725F721328D0917E0001A387 /* UIButton+.swift */,
+				725F721828D1CB7B0001A387 /* String+.swift */,
+				725F721A28D1D0910001A387 /* UILabel+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -296,6 +310,14 @@
 				7261A7B728D039C7006A7069 /* SettingGoToLogoutViewController.swift */,
 			);
 			path = SettingGoToLogout;
+			sourceTree = "<group>";
+		};
+		7261A7BA28D089A9006A7069 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				7261A7C028D08D6E006A7069 /* Localizable.strings */,
+			);
+			path = Localizable;
 			sourceTree = "<group>";
 		};
 		F28C4F79DFFF2FB9107A845D /* Frameworks */ = {
@@ -396,6 +418,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = 72167B6828C84F6800116F4F;
 			productRefGroup = 72167B7228C84F6800116F4F /* Products */;
@@ -419,6 +442,7 @@
 				7261A7B128D036F6006A7069 /* Logout.storyboard in Resources */,
 				7261A7A528CF2D58006A7069 /* Login.storyboard in Resources */,
 				7261A79C28CEEA90006A7069 /* Setting.storyboard in Resources */,
+				7261A7BE28D08D6E006A7069 /* Localizable.strings in Resources */,
 				72167B7E28C84F6900116F4F /* Assets.xcassets in Resources */,
 				7261A78F28C9A404006A7069 /* Home.storyboard in Resources */,
 				7261A7B628D039AE006A7069 /* SettingGoToLogout.storyboard in Resources */,
@@ -531,7 +555,9 @@
 				72167B7528C84F6800116F4F /* AppDelegate.swift in Sources */,
 				72167BA928C8555300116F4F /* BaseViewController.swift in Sources */,
 				7261A79D28CEEA93006A7069 /* SettingViewController.swift in Sources */,
+				725F721428D0917E0001A387 /* UIButton+.swift in Sources */,
 				7261A7B828D039C7006A7069 /* SettingGoToLogoutViewController.swift in Sources */,
+				725F721B28D1D0910001A387 /* UILabel+.swift in Sources */,
 				7261A79628C9D38A006A7069 /* TabBarViewController.swift in Sources */,
 				723EDDCB28C8895D002E09F3 /* BaseNavigationViewController.swift in Sources */,
 				7261A7A228CEF197006A7069 /* HistoryViewController.swift in Sources */,
@@ -539,6 +565,7 @@
 				7261A7AA28CF3920006A7069 /* UIApplication+.swift in Sources */,
 				7261A7B328D0377B006A7069 /* LogoutViewController.swift in Sources */,
 				7261A7A728CF2D96006A7069 /* LoginViewController.swift in Sources */,
+				725F721928D1CB7B0001A387 /* String+.swift in Sources */,
 				72167BBD28C87AAA00116F4F /* R.generated.swift in Sources */,
 				7261A7AC28CF3ADF006A7069 /* Utils.swift in Sources */,
 			);
@@ -581,8 +608,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				72167B8028C84F6900116F4F /* Base */,
+				725F721028D08DFF0001A387 /* vi */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7261A7C028D08D6E006A7069 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7261A7BF28D08D6E006A7069 /* en */,
+				725F721228D08E130001A387 /* vi */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -592,6 +629,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -653,6 +691,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

@@ -8,7 +8,6 @@
 import UIKit
 
 final class LogoutViewController: BaseViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }

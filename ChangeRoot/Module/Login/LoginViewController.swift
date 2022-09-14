@@ -12,7 +12,7 @@ final class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     @IBAction private func didTapLogin(_ sender: Any) {
         Utils.changeTabBarToRoot()
     }

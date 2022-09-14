@@ -9,6 +9,6 @@ import UIKit
 
 extension UIApplication {
     class func keyWindow() -> UIWindow? {
-        return UIApplication.shared.windows.first(where: { $0.isKeyWindow }) ?? UIApplication.shared.windows.first
+        UIApplication.shared.windows.first(where: { $0.isKeyWindow }) ?? UIApplication.shared.windows.first
     }
 }
