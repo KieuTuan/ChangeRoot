@@ -9,5 +9,6 @@ target 'ChangeRoot' do
   
   pod 'R.swift'
   pod 'SwiftLint'
+  pod 'IQKeyboardManagerSwift'
 
 end
