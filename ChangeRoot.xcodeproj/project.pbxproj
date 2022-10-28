@@ -38,6 +38,7 @@
 		7261A7B628D039AE006A7069 /* SettingGoToLogout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7261A7B528D039AE006A7069 /* SettingGoToLogout.storyboard */; };
 		7261A7B828D039C7006A7069 /* SettingGoToLogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261A7B728D039C7006A7069 /* SettingGoToLogoutViewController.swift */; };
 		7261A7BE28D08D6E006A7069 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7261A7C028D08D6E006A7069 /* Localizable.strings */; };
+		72F1C6E7290B85B8007A63A2 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F1C6E6290B85B8007A63A2 /* LoadingButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		7261A7B528D039AE006A7069 /* SettingGoToLogout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingGoToLogout.storyboard; sourceTree = "<group>"; };
 		7261A7B728D039C7006A7069 /* SettingGoToLogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGoToLogoutViewController.swift; sourceTree = "<group>"; };
 		7261A7BF28D08D6E006A7069 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		72F1C6E6290B85B8007A63A2 /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
 		F278C28C935A6688A4EE89E4 /* Pods_ChangeRoot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChangeRoot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -279,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				7261A7AB28CF3ADF006A7069 /* Utils.swift */,
+				72F1C6E6290B85B8007A63A2 /* LoadingButton.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F1C6E7290B85B8007A63A2 /* LoadingButton.swift in Sources */,
 				7261A79128C9B0B3006A7069 /* SceneDelegate.swift in Sources */,
 				72167B7528C84F6800116F4F /* AppDelegate.swift in Sources */,
 				72167BA928C8555300116F4F /* BaseViewController.swift in Sources */,
