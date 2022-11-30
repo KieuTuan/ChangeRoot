@@ -38,6 +38,8 @@
 		7261A7B628D039AE006A7069 /* SettingGoToLogout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7261A7B528D039AE006A7069 /* SettingGoToLogout.storyboard */; };
 		7261A7B828D039C7006A7069 /* SettingGoToLogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261A7B728D039C7006A7069 /* SettingGoToLogoutViewController.swift */; };
 		7261A7BE28D08D6E006A7069 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7261A7C028D08D6E006A7069 /* Localizable.strings */; };
+		72977D2F29305F960082DCA4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72977D2E29305F960082DCA4 /* UIView+.swift */; };
+		72977D31293063800082DCA4 /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72977D30293063800082DCA4 /* DotView.swift */; };
 		72F1C6E7290B85B8007A63A2 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F1C6E6290B85B8007A63A2 /* LoadingButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +99,8 @@
 		7261A7B528D039AE006A7069 /* SettingGoToLogout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingGoToLogout.storyboard; sourceTree = "<group>"; };
 		7261A7B728D039C7006A7069 /* SettingGoToLogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGoToLogoutViewController.swift; sourceTree = "<group>"; };
 		7261A7BF28D08D6E006A7069 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		72977D2E29305F960082DCA4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		72977D30293063800082DCA4 /* DotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
 		72F1C6E6290B85B8007A63A2 /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
 		F278C28C935A6688A4EE89E4 /* Pods_ChangeRoot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChangeRoot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -282,6 +286,7 @@
 			children = (
 				7261A7AB28CF3ADF006A7069 /* Utils.swift */,
 				72F1C6E6290B85B8007A63A2 /* LoadingButton.swift */,
+				72977D30293063800082DCA4 /* DotView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				725F721328D0917E0001A387 /* UIButton+.swift */,
 				725F721828D1CB7B0001A387 /* String+.swift */,
 				725F721A28D1D0910001A387 /* UILabel+.swift */,
+				72977D2E29305F960082DCA4 /* UIView+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -568,7 +574,9 @@
 				7261A79828C9D52F006A7069 /* HomeViewController.swift in Sources */,
 				7261A7AA28CF3920006A7069 /* UIApplication+.swift in Sources */,
 				7261A7B328D0377B006A7069 /* LogoutViewController.swift in Sources */,
+				72977D31293063800082DCA4 /* DotView.swift in Sources */,
 				7261A7A728CF2D96006A7069 /* LoginViewController.swift in Sources */,
+				72977D2F29305F960082DCA4 /* UIView+.swift in Sources */,
 				725F721928D1CB7B0001A387 /* String+.swift in Sources */,
 				72167BBD28C87AAA00116F4F /* R.generated.swift in Sources */,
 				7261A7AC28CF3ADF006A7069 /* Utils.swift in Sources */,

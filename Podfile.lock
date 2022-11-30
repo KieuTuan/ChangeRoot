@@ -4,11 +4,16 @@ PODS:
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
   - SwiftLint (0.48.0)
+  - Swinject (2.7.1)
+  - SwinjectStoryboard (2.2.2):
+    - Swinject (~> 2.7.1)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
-  - R.swift
+  - R.swift (= 6.1.0)
   - SwiftLint
+  - Swinject (= 2.7.1)
+  - SwinjectStoryboard (= 2.2.2)
 
 SPEC REPOS:
   trunk:
@@ -16,13 +21,17 @@ SPEC REPOS:
     - R.swift
     - R.swift.Library
     - SwiftLint
+    - Swinject
+    - SwinjectStoryboard
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   SwiftLint: 284cea64b6187c5d6bd83e9a548a64104d546447
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  SwinjectStoryboard: 240ce371396da09a4c43c72ee5c148108500e184
 
-PODFILE CHECKSUM: c2c3b4121655ffb51d7bbe4834aee547b6551fb8
+PODFILE CHECKSUM: 96bb96fdebef962ab11c39ee88bd635e1ac94ed8
 
 COCOAPODS: 1.11.2

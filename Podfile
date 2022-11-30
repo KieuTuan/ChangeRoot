@@ -7,8 +7,10 @@ target 'ChangeRoot' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
-  pod 'R.swift'
+  pod 'R.swift', '6.1.0'
   pod 'SwiftLint'
   pod 'IQKeyboardManagerSwift'
+  pod 'Swinject', '2.7.1'
+  pod 'SwinjectStoryboard', '2.2.2'
 
 end
