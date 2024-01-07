@@ -41,6 +41,8 @@
 		72977D2F29305F960082DCA4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72977D2E29305F960082DCA4 /* UIView+.swift */; };
 		72977D31293063800082DCA4 /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72977D30293063800082DCA4 /* DotView.swift */; };
 		72F1C6E7290B85B8007A63A2 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F1C6E6290B85B8007A63A2 /* LoadingButton.swift */; };
+		72FCD7BB29375676009FB631 /* BaseNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72FCD7BA29375676009FB631 /* BaseNavigationBar.xib */; };
+		72FCD7BD293756CF009FB631 /* BaseNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FCD7BC293756CF009FB631 /* BaseNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		72977D2E29305F960082DCA4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		72977D30293063800082DCA4 /* DotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
 		72F1C6E6290B85B8007A63A2 /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		72FCD7BA29375676009FB631 /* BaseNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseNavigationBar.xib; sourceTree = "<group>"; };
+		72FCD7BC293756CF009FB631 /* BaseNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationBar.swift; sourceTree = "<group>"; };
 		F278C28C935A6688A4EE89E4 /* Pods_ChangeRoot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChangeRoot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -222,6 +226,7 @@
 			children = (
 				72167BA828C8555300116F4F /* BaseViewController.swift */,
 				723EDDCA28C8895D002E09F3 /* BaseNavigationViewController.swift */,
+				72FCD7B9293755BE009FB631 /* BaseNavigationBar */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -327,6 +332,15 @@
 				7261A7C028D08D6E006A7069 /* Localizable.strings */,
 			);
 			path = Localizable;
+			sourceTree = "<group>";
+		};
+		72FCD7B9293755BE009FB631 /* BaseNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				72FCD7BA29375676009FB631 /* BaseNavigationBar.xib */,
+				72FCD7BC293756CF009FB631 /* BaseNavigationBar.swift */,
+			);
+			path = BaseNavigationBar;
 			sourceTree = "<group>";
 		};
 		F28C4F79DFFF2FB9107A845D /* Frameworks */ = {
@@ -449,6 +463,7 @@
 				7261A79428C9D1E0006A7069 /* TabBar.storyboard in Resources */,
 				72167B8128C84F6900116F4F /* LaunchScreen.storyboard in Resources */,
 				7261A7B128D036F6006A7069 /* Logout.storyboard in Resources */,
+				72FCD7BB29375676009FB631 /* BaseNavigationBar.xib in Resources */,
 				7261A7A528CF2D58006A7069 /* Login.storyboard in Resources */,
 				7261A79C28CEEA90006A7069 /* Setting.storyboard in Resources */,
 				7261A7BE28D08D6E006A7069 /* Localizable.strings in Resources */,
@@ -573,6 +588,7 @@
 				7261A7A228CEF197006A7069 /* HistoryViewController.swift in Sources */,
 				7261A79828C9D52F006A7069 /* HomeViewController.swift in Sources */,
 				7261A7AA28CF3920006A7069 /* UIApplication+.swift in Sources */,
+				72FCD7BD293756CF009FB631 /* BaseNavigationBar.swift in Sources */,
 				7261A7B328D0377B006A7069 /* LogoutViewController.swift in Sources */,
 				72977D31293063800082DCA4 /* DotView.swift in Sources */,
 				7261A7A728CF2D96006A7069 /* LoginViewController.swift in Sources */,

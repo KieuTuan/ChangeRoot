@@ -8,7 +8,6 @@
 import UIKit
 
 internal class BaseNavigationViewController: UINavigationController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         customizeNavigationBar()
@@ -27,6 +26,6 @@ internal class BaseNavigationViewController: UINavigationController {
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
+        .lightContent
     }
 }

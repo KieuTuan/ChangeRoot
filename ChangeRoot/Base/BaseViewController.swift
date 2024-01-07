@@ -8,7 +8,6 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-
     var needShowNavigationBar = true
     var needShowTabbar = true
 
