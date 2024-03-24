@@ -11,7 +11,7 @@ import UIKit
 extension UIView {
     @IBInspectable var cornerRadius: CGFloat {
         get {
-            return layer.cornerRadius
+            layer.cornerRadius
         }
         set {
             layer.cornerRadius = newValue
@@ -21,7 +21,7 @@ extension UIView {
 
     @IBInspectable var borderWidth: CGFloat {
         get {
-            return layer.borderWidth
+            layer.borderWidth
         }
         set {
             layer.borderWidth = newValue
@@ -30,7 +30,7 @@ extension UIView {
 
     @IBInspectable var borderColor: UIColor? {
         get {
-            return UIColor(cgColor: layer.borderColor ?? UIColor.white.cgColor)
+            UIColor(cgColor: layer.borderColor ?? UIColor.white.cgColor)
         }
         set {
             layer.borderColor = newValue?.cgColor
@@ -40,7 +40,7 @@ extension UIView {
 
 extension UIView {
     func addDashedBorder(color: CGColor, cornerRadius: CGFloat, borderWidth: CGFloat) {
-        let shapeLayer: CAShapeLayer = CAShapeLayer()
+        let shapeLayer = CAShapeLayer()
         let frameSize = self.frame.size
         let shapeRect = CGRect(x: 0, y: 0, width: frameSize.width, height: frameSize.height)
 
@@ -53,6 +53,6 @@ extension UIView {
         shapeLayer.lineDashPattern = [2, 2]
         shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: cornerRadius).cgPath
 
-        self.layer.addSublayer(shapeLayer)
+        layer.addSublayer(shapeLayer)
     }
 }

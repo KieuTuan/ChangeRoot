@@ -10,6 +10,6 @@ import UIKit
 extension UILabel {
     @IBInspectable var localizableText: String? {
         get { self.localizableText }
-        set(value) { text = text?.localizableKeyToValue(key: value ?? "") }
+        set(value) { text = text?.localizableKeyToValue(key: value ?? .empty) }
     }
 }

@@ -9,17 +9,17 @@ import UIKit
 
 class BaseNavigationBar: UINavigationBar {
     @IBOutlet private var contentView: UIView!
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupView()
     }
-    
+
     private func setupView() {
         Bundle.main.loadNibNamed("BaseNavigationBar", owner: self, options: nil)
         self.addSubview(contentView)

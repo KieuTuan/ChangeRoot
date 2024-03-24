@@ -39,7 +39,6 @@
 		7261A7B828D039C7006A7069 /* SettingGoToLogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261A7B728D039C7006A7069 /* SettingGoToLogoutViewController.swift */; };
 		7261A7BE28D08D6E006A7069 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7261A7C028D08D6E006A7069 /* Localizable.strings */; };
 		72977D2F29305F960082DCA4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72977D2E29305F960082DCA4 /* UIView+.swift */; };
-		72977D31293063800082DCA4 /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72977D30293063800082DCA4 /* DotView.swift */; };
 		72F1C6E7290B85B8007A63A2 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F1C6E6290B85B8007A63A2 /* LoadingButton.swift */; };
 		72FCD7BB29375676009FB631 /* BaseNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72FCD7BA29375676009FB631 /* BaseNavigationBar.xib */; };
 		72FCD7BD293756CF009FB631 /* BaseNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FCD7BC293756CF009FB631 /* BaseNavigationBar.swift */; };
@@ -102,7 +101,6 @@
 		7261A7B728D039C7006A7069 /* SettingGoToLogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGoToLogoutViewController.swift; sourceTree = "<group>"; };
 		7261A7BF28D08D6E006A7069 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		72977D2E29305F960082DCA4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
-		72977D30293063800082DCA4 /* DotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
 		72F1C6E6290B85B8007A63A2 /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
 		72FCD7BA29375676009FB631 /* BaseNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseNavigationBar.xib; sourceTree = "<group>"; };
 		72FCD7BC293756CF009FB631 /* BaseNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationBar.swift; sourceTree = "<group>"; };
@@ -200,9 +198,9 @@
 		72167BA428C8506900116F4F /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				7261A79228C9D187006A7069 /* TabBar */,
 				7261A7A328CF2D04006A7069 /* Login */,
 				7261A7AE28D036CE006A7069 /* Logout */,
-				7261A79228C9D187006A7069 /* TabBar */,
 				7261A78D28C9A3E2006A7069 /* Home */,
 				7261A79E28CEF115006A7069 /* History */,
 				7261A79928CEE6B2006A7069 /* Setting */,
@@ -291,7 +289,6 @@
 			children = (
 				7261A7AB28CF3ADF006A7069 /* Utils.swift */,
 				72F1C6E6290B85B8007A63A2 /* LoadingButton.swift */,
-				72977D30293063800082DCA4 /* DotView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -590,7 +587,6 @@
 				7261A7AA28CF3920006A7069 /* UIApplication+.swift in Sources */,
 				72FCD7BD293756CF009FB631 /* BaseNavigationBar.swift in Sources */,
 				7261A7B328D0377B006A7069 /* LogoutViewController.swift in Sources */,
-				72977D31293063800082DCA4 /* DotView.swift in Sources */,
 				7261A7A728CF2D96006A7069 /* LoginViewController.swift in Sources */,
 				72977D2F29305F960082DCA4 /* UIView+.swift in Sources */,
 				725F721928D1CB7B0001A387 /* String+.swift in Sources */,

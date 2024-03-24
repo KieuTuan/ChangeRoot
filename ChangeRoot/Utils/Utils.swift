@@ -8,7 +8,7 @@
 import UIKit
 
 enum Utils {
-    static private func swapRootViewController(_ newRootViewController:UIViewController, completion: (() -> Void)? =  nil) {
+    static private func swapRootViewController(_ newRootViewController: UIViewController, completion: (() -> Void)? = nil) {
         guard let window = UIApplication.keyWindow() else { return }
         window.rootViewController = newRootViewController
         UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: nil) { _ in

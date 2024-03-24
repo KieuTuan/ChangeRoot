@@ -14,7 +14,7 @@ class LoadingButton: UIButton {
     func showLoading() {
         isUserInteractionEnabled = false
         originalButtonText = self.titleLabel?.text
-        self.setTitle("", for: UIControl.State.normal)
+        setTitle(.empty, for: UIControl.State.normal)
 
         if activityIndicator == nil {
             activityIndicator = createActivityIndicator()

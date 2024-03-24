@@ -8,7 +8,7 @@
 import UIKit
 
 final class HistoryViewController: BaseViewController {
-
+    // MARK: - Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "History"
